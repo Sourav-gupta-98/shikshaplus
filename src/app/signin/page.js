@@ -4,40 +4,40 @@ import React from "react";
 
 const page = () => {
   return (
-    <div id="main-wrapper" class="page-wrapper">
-      <div class="dc-signin theme-two">
-        <div class="signin-wrapper">
-          <div class="intro-box">
-            <div class="intro-content style-dark">
+    <div id="main-wrapper" className="page-wrapper">
+      <div className="dc-signin theme-two">
+        <div className="signin-wrapper">
+          <div className="intro-box">
+            <div className="intro-content style-dark">
               <Image
                 src="/images/shikshapluslogo.png"
-                class="logo"
+                className="logo"
                 alt="Shiksha Plus"
                 width={100}
                 height={100}
               />
-              <div class="heading-wrapper">
-                <h2 class="h1">
+              <div className="heading-wrapper">
+                <h2 className="h1">
                   Welcome to <span>Shiksha Plus</span>
                 </h2>
               </div>
-              <div class="text-wrapper">
+              <div className="text-wrapper">
                 <p>
                   An easy to use, affordable solution for any educational
                   organization.
                 </p>
               </div>
-              <div class="btn-wrapper">
-                <Link class="btn btn-primary btn-light" href="/">
+              <div className="btn-wrapper">
+                <Link className="btn btn-primary btn-light" href="/">
                   Discover More
                 </Link>
               </div>
             </div>
-            <div class="st-tab-btn">
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
+            <div className="st-tab-btn">
+              <ul className="nav nav-tabs" role="tablist">
+                <li className="nav-item">
                   <Link
-                    class="nav-link active"
+                    className="nav-link active"
                     data-toggle="tab"
                     href="#SignIn"
                     role="tab"
@@ -45,9 +45,9 @@ const page = () => {
                     Login
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link
-                    class="nav-link"
+                    className="nav-link"
                     data-toggle="tab"
                     href="#SignUp"
                     role="tab"
@@ -58,92 +58,96 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div class="form-box">
-            <div class="st-tab-content">
-              <div class="tab-content">
-                <div class="tab-pane active" id="SignIn" role="tabpanel">
+          <div className="form-box">
+            <div className="st-tab-content">
+              <div className="tab-content">
+                <div className="tab-pane active" id="SignIn" role="tabpanel">
                   <form>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Enter Email/Username"
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="password"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Enter Password"
                       />
                     </div>
-                    <div class="form-group text-center">
-                      <Link href="/" class="btn link-btn forgot-link">
+                    <div className="form-group text-center">
+                      <Link href="/" className="btn link-btn forgot-link">
                         Forgot Password?
                       </Link>
                     </div>
-                    <div class="form-group">
-                      <button class="btn btn-primary btn-full">Sign In</button>
+                    <div className="form-group">
+                      <button className="btn btn-primary btn-full">
+                        Sign In
+                      </button>
                     </div>
-                    <div class="or">
+                    <div className="or">
                       <span>or</span>
                     </div>
 
-                    <div class="form-group">
-                      <button class="btn btn-primary btn-full email-btn">
+                    <div className="form-group">
+                      <button className="btn btn-primary btn-full email-btn">
                         Continue with Email
                       </button>
                     </div>
-                    <div class="form-group">
-                      <button class="btn btn-primary btn-full facebook-btn">
+                    <div className="form-group">
+                      <button className="btn btn-primary btn-full facebook-btn">
                         Continue with Facebook
                       </button>
                     </div>
                   </form>
                 </div>
-                <div class="tab-pane" id="SignUp" role="tabpanel">
+                <div className="tab-pane" id="SignUp" role="tabpanel">
                   <form>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Enter Full Name"
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Enter Email Address"
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="password"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Enter Password"
                       />
                     </div>
-                    <div class="form-group text-center">
+                    <div className="form-group text-center">
                       <label>
                         <input type="checkbox" required="required" /> I accept
                         the policy and terms
                       </label>
                     </div>
-                    <div class="form-group">
-                      <button class="btn btn-primary btn-full">Sign Up</button>
+                    <div className="form-group">
+                      <button className="btn btn-primary btn-full">
+                        Sign Up
+                      </button>
                     </div>
-                    <div class="or">
+                    <div className="or">
                       <span>or</span>
                     </div>
 
-                    <div class="form-group">
-                      <button class="btn btn-primary btn-full email-btn">
+                    <div className="form-group">
+                      <button className="btn btn-primary btn-full email-btn">
                         Continue with Email
                       </button>
                     </div>
-                    <div class="form-group">
-                      <button class="btn btn-primary btn-full facebook-btn">
+                    <div className="form-group">
+                      <button className="btn btn-primary btn-full facebook-btn">
                         Continue with Facebook
                       </button>
                     </div>
