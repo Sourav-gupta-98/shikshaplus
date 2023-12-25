@@ -1,19 +1,28 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const page = () => {
+  const router = useRouter();
+
+  const dashboard = () => {
+    router.push("/dashboard");
+  };
+
   return (
     <div id="main-wrapper" className="page-wrapper">
       <div className="dc-signin theme-two">
-        <div className="signin-wrapper">
+        <div className="signin-wrapper" style={{ marginTop: "100px" }}>
           <div className="intro-box">
             <div className="intro-content style-dark">
               <Image
                 src="/images/shikshapluslogo.png"
                 className="logo"
                 alt="Shiksha Plus"
-                width={100}
+                width={400}
                 height={100}
               />
               <div className="heading-wrapper">
@@ -39,7 +48,7 @@ const page = () => {
                   <Link
                     className="nav-link active"
                     data-toggle="tab"
-                    href="#SignIn"
+                    href="#Signin"
                     role="tab"
                   >
                     Login
@@ -62,7 +71,7 @@ const page = () => {
             <div className="st-tab-content">
               <div className="tab-content">
                 <div className="tab-pane active" id="SignIn" role="tabpanel">
-                  <form>
+                  <form onSubmit={(e) => e.preventDefault()}>
                     <div className="form-group">
                       <input
                         type="text"
@@ -83,7 +92,10 @@ const page = () => {
                       </Link>
                     </div>
                     <div className="form-group">
-                      <button className="btn btn-primary btn-full">
+                      <button
+                        className="btn btn-primary btn-full"
+                        onClick={dashboard}
+                      >
                         Sign In
                       </button>
                     </div>
